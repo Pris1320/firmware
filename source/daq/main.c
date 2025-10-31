@@ -373,7 +373,7 @@ bool can_parse_error_status(uint32_t err, timestamped_frame_t* frame) {
 void sendVersion() {
     char git_hash[8] = GIT_HASH;
     uint64_t git_hash_num = EIGHT_CHAR_TO_U64_LE(git_hash);
-    SEND_DASH_VERSION(git_hash_num);
+    SEND_DAQ_VERSION(git_hash_num);
 }
 
 /**
